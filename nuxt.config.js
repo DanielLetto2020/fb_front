@@ -10,7 +10,7 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
   server: {
-    port: 5511, // default: 3000
+    port: 5512, // default: 3000
     host: !isProd ? "localhost" : "0.0.0.0" // default: localhost 0.0.0.0
   },
 
@@ -38,7 +38,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {src: "~/plugins/config-axios.js"}
+    {src: "~/plugins/config-axios.js"},
+    {src: '~/plugins/bootstrap-vue'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
